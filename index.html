@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ulti-mutt Dog Lover</title>
+    <style>
+      body {
+        background-color: #66bfbf;
+      }
+      div {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        background: radial-gradient(
+          905px at 4.9% 85.8%,
+          rgb(255, 243, 242) 0.1%,
+          rgb(255, 247, 220) 57.6%
+        );
+        margin: 5% 25%;
+        padding: 20px 20px 50px;
+        border: solid 1px #fcfefe;
+        border-radius: 25px;
+      }
+      h1 {
+        color: #f76b8a;
+      }
+      a {
+        color: #66bfbf;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      img {
+        max-width: 90%;
+        border-radius: 25px;
+      }
+      button {
+        border-radius: 25px;
+        margin: 30px auto;
+        display: block;
+        background-color: #f76b8a;
+        border: 1px solid #fcfefe;
+        color: #fcfefe;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        box-shadow: 2px 3px 5px 1px #f0f0f0;
+      }
+      button:hover {
+        color: #f76b8a;
+        background: #fcfefe;
+        border: 1px solid #f76b8a;
+        transition: all 300ms ease;
+        cursor: pointer;
+      }
+      p {
+        text-align: left;
+        font-size: 10pt;
+      }
+      h2 {
+        font-size: 12pt;
+        text-align: center;
+        font-weight: bold;
+      }
+      .footer {
+        text-align: center;
+        font-size: 9pt;
+      }
+    </style>
+    <style shopback-extension-v6-7-1="" data-styled-version="4.2.0"></style>
+    <style type="text/css">
+      @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
+          format("woff2");
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>The Ulti-mutt Dog Lover</h1>
+      <img src="./The Ulti-mutt Dog Lover_files/corgi-header.png" />
+      <p>
+        If you are a dog lover and want to learn some cool facts about dogs,
+        then you've come to the right place.
+      </p>
+      <p>
+        We'll serve you paw-some dog facts with a side of howl-arious puns! 🐶
+      </p>
+      <h2>Ready? Click the button below for today's fun fact.</h2>
+      <button>Let’s raise the ruff!</button>
+      <p class="footer">
+        <em
+          >Coded by
+          <a
+            href="https://www.linkedin.com/in/margarita-jabola/"
+            target="_blank"
+            >Megann Jabola</a
+          ></em
+        >
+      </p>
+    </div>
+    <script>
+      function dogFact() {
+        alert(
+          "DID YOU KNOW: Your dog can smell your feelings. In fact, your dog’s sense of smell is approximately 100,000 times better than yours."
+        );
+        let dogOwner = prompt("Do you own a dog? (Yes/No)");
+        if (dogOwner.toLowerCase() === "yes") {
+          alert("That's paw-some! 🐾");
+        } else {
+          let dogBreed = prompt(
+            "Aww. If you could own a dog, what breed would you like?"
+          );
+          alert("That's cute! We hope you get a " + dogBreed + " soon 💖");
+        }
+        alert("Come back tomorrow for another fur-tastic fact 😊");
+      }
+      let factButton = document.querySelector("button");
+
+      factButton.addEventListener("click", dogFact);
+    </script>
+  </body>
+</html>
